@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeContainer />} />
-          <Route path="/id" element={<ItemDetailContainer />} />
+          <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
           <Route path="*" element={<h1>NOT FOUND</h1>} />
         </Routes>
       </BrowserRouter>
