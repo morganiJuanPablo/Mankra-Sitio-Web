@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import GalleryItemDetailContainer from "../../common/galleryItemDetail/GalleryItemDetailContainer";
 import styles from "./ItemDetail.module.css";
+import CounterContainer from "../../common/counter/CounterContainer";
 
 const ItemDetail = () => {
   return (
@@ -21,7 +22,7 @@ const ItemDetail = () => {
         </p>
         <p className={styles.price}>190€</p>
       </section>
-      <h3 style={{ fontSize: "3rem", margin: "4rem" }}>CONTADOR</h3>
+      <CounterContainer/>
       <h3 style={{ fontSize: "3rem", margin: "4rem" }}>SUSCRIPTION</h3>
       <p className={styles.legalText}>
         <b>Información sobre posibles costes adicionales.</b>
