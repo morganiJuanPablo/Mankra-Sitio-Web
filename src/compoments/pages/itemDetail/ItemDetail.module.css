@@ -1,0 +1,16 @@
+.container{
+    max-width: 82rem;
+    margin: 5rem auto 3rem auto;
+}
+.headerItemDetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2rem;
+}
+.headerItemDetail a{
+    font-size: 1.5rem;
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+}

@@ -1,0 +1,44 @@
+.containerGrid {  
+  max-width: 82rem;
+  margin: 3rem auto 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3);
+  grid-template-areas:
+    "a a a b"
+    "a a a c"
+    "a a a d";
+  grid-gap: 1rem;
+}
+.item1 {
+  background-color: aqua;
+  grid-area: a;
+  height: 61.2rem;
+  width: 61.2rem;
+  object-fit: cover;
+  object-position: center;
+}
+.item2 {
+  background-color: beige;
+  grid-area: b;
+  height: 19.6rem;
+  width: 19.6rem;
+  object-fit: cover;
+  object-position: center;
+}
+.item3 {
+  background-color: blue;
+  grid-area: c;
+  height: 19.6rem;
+  width: 19.6rem;
+  object-fit: cover;
+  object-position: center;
+}
+.item4 {
+  background-color: brown;
+  grid-area: d;
+  height: 19.6rem;
+  width: 19.6rem;
+  object-fit: cover;
+  object-position: center;
+}
