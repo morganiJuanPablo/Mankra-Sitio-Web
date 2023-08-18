@@ -1,8 +1,7 @@
 .contenedorGrid {
   width: 100%;
   max-width: 216rem;
-  margin: auto;
-  position: relative;
+  margin: auto;  
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
