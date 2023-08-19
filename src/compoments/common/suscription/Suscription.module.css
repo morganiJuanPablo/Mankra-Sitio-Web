@@ -1,0 +1,60 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+.titleSuscription {
+  font-size: 2.2rem;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+}
+span {
+  font-size: 1.2rem;
+  color: red;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+.checkboxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.checkboxText {
+  font-size: 1.5rem;
+  color: grey;
+}
+.input {
+  width: 29.5rem;
+  height: 3.7rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: grey;
+}
+.inputError {
+  width: 29.5rem;
+  height: 3.7rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: grey;
+  border-color: red;
+}
+.btn {
+  width: 13.6rem;
+  height: 3.7rem;
+  background-color: #d7bf9c;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
