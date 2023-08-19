@@ -16,7 +16,10 @@ const SuscriptionContainer = () => {
       name: Yup.string().required("El nombre completo es requerido"),
       email: Yup.string()
         .email("No es una dirección de email válida")
-        .required("La dirección de email es requerida"),
+        .required("La dirección de email es requerida")
+        .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, {
+          message: "No es un formato de correo de email válido",
+        }),
     }),
     validateOnChange: false,
   });
