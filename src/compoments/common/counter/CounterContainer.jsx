@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Counter from "./Counter";
 
-const CounterContainer = () => {
+const CounterContainer = ({product}) => {
   const [counter, setCounter] = useState(1);
 
   const sumar = () => {
@@ -13,7 +13,7 @@ const CounterContainer = () => {
 
   return (
     <>
-      <Counter sumar={sumar} restar={restar} counter={counter} />
+      <Counter sumar={sumar} restar={restar} counter={counter} product={product}/>
     </>
   );
 };

@@ -20,6 +20,9 @@ const SuscriptionContainer = () => {
         .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, {
           message: "No es un formato de correo de email válido",
         }),
+      check: Yup.boolean()
+        .oneOf([], "Debe aceptar los términos y condiciones")
+        .required("Debe aceptar los términos y condiciones"),
     }),
     validateOnChange: false,
   });

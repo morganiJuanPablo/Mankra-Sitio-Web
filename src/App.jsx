@@ -11,7 +11,7 @@ function App() {
         <CartContextComponent>
           <Routes>
             <Route path="/" element={<HomeContainer />} />
-            <Route path="/itemDetail/" element={<ItemDetailContainer />} />
+            <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
             <Route path="*" element={<h1>NOT FOUND</h1>} />
           </Routes>
         </CartContextComponent>

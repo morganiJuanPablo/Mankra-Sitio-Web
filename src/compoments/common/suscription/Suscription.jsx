@@ -1,9 +1,13 @@
 import styles from "./Suscription.module.css";
 
-const Suscription = ({ handleChange, handleSubmit, errors }) => {
+const Suscription = ({
+  handleChange,
+  handleSubmit,
+  errors,
+}) => {
   console.log(errors);
   return (
-    <div>
+    <div className={styles.suscriptionContainer}>
       <p className={styles.titleSuscription}>
         Suscríbete para recibir todas las novedades
       </p>
@@ -33,7 +37,7 @@ const Suscription = ({ handleChange, handleSubmit, errors }) => {
         </button>
 
         <div className={styles.checkboxContainer}>
-          <input type="checkbox" required className={styles.checkbox} />
+          <input type="checkbox" name="check" className={styles.checkbox} />
           <p className={styles.checkboxText}>
             Acepto todos los términos y condiciones
           </p>

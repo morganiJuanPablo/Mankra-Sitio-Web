@@ -1,9 +1,9 @@
 import GalleryItemDetail from "./GalleryItemDetail"
 
 
-const GalleryItemDetailContainer = () => {
+const GalleryItemDetailContainer = ({product}) => {
   return (
-    <GalleryItemDetail/>
+    <GalleryItemDetail product={product}/>
   )
 }
 
