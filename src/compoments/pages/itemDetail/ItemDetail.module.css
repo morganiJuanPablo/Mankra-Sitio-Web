@@ -1,7 +1,7 @@
 .container {
   width: 100%;
-  max-width: 82rem;
-  margin: 2rem auto 3rem auto;
+  max-width: 85rem;
+  margin: 0 auto 3rem auto;
   padding: 2rem;
 }
 .headerItemDetail {
@@ -43,4 +43,18 @@
 .legalText {
   font-size: 1.6rem;
   color: grey;
+}
+.contenedorSkeleton {
+  width: 100%;
+  max-width: 82rem;
+  margin: 6rem auto 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4);
+  grid-template-areas:
+    "a a a b"
+    "a a a c"
+    "a a a d"
+    "e e e e";
+  grid-gap: 0.5rem;
 }

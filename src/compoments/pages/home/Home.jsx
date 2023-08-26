@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 
 const Home = () => {
   return (
     <section className={styles.contenedorGrid}>
       <div className={styles.item1}>
-        <a href="">
+        <Link to="/itemDetail/bdx7pCkEwweh8bnseRo3">
           <img
             className={styles.imgHome}
             src="https://res.cloudinary.com/dqykftyy6/image/upload/v1692024928/Mankra-Sitio-Web/Assets/close-up-person-working-dreamcatcher_phjqab.jpg"
             alt="Plumas en macramé"
           />
-        </a>
+        </Link>
         <p>Comprar</p>
       </div>
       <div className={styles.item2}>
@@ -24,10 +25,12 @@ const Home = () => {
         <p>Comprar</p>
       </div>
       <div className={styles.item3}>
-        <img
-          src="https://res.cloudinary.com/dqykftyy6/image/upload/v1692026024/Mankra-Sitio-Web/Assets/Cart_2_vozxu9.svg"
-          alt=""
-        />
+        <Link to="/cart">
+          <img
+            src="https://res.cloudinary.com/dqykftyy6/image/upload/v1692026024/Mankra-Sitio-Web/Assets/Cart_2_vozxu9.svg"
+            alt="Carrito"
+          />
+        </Link>
         <img
           className={styles.logo}
           src="https://res.cloudinary.com/dqykftyy6/image/upload/v1692025050/Mankra-Sitio-Web/Assets/Logo_pvoyqt.svg"

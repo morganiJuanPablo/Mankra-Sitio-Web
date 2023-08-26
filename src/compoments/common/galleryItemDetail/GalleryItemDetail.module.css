@@ -1,7 +1,7 @@
 .containerGrid {
   width: 100%;
-  max-width: 85rem;
-  margin: 1rem auto 3rem auto;
+  max-width: 82rem;
+  margin: 4rem auto 3rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3);
@@ -16,7 +16,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  scale: 110%;
+  scale: 100%;
   transition: 0.5s ease;
 }
 .imgProduct:hover {
@@ -39,7 +39,6 @@
   transition: 0.3s ease;
 }
 .item1 {
-  background-color: rgba(0, 7, 7, 0.116);
   grid-area: a;
   height: 61.2rem;
   width: 100%;

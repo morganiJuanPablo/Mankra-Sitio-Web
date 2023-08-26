@@ -14,7 +14,7 @@ const ItemDetail = ({ product }) => {
           alt="Logo Mankra"
           className={styles.logoMankra}
         />
-        <Link to="/">VOLVER</Link>
+        <Link to="/">INICIO</Link>
       </section>
       {product.id ? (
         <div className={styles.container}>
@@ -36,21 +36,7 @@ const ItemDetail = ({ product }) => {
           </p>
         </div>
       ) : (
-        <div
-          style={{
-            width: "100%",
-            maxWidth: "85rem",
-            margin: "1rem auto 3rem auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "repeat(3)",
-            gridTemplateAreas: `"a a a b"
-              "a a a c"
-              "a a a d"
-              "e e e e"`,
-            gridGap: "0.5rem",
-          }}
-        >
+        <div className={styles.contenedorSkeleton}>
           <Skeleton
             variant="rectangular"
             style={{
@@ -58,6 +44,8 @@ const ItemDetail = ({ product }) => {
               height: "61.2rem",
               width: "100%",
               maxWidth: "61.2rem",
+              margin: 0,
+              padding: 0,
             }}
           />
 
@@ -68,6 +56,8 @@ const ItemDetail = ({ product }) => {
               height: "20rem",
               width: "100%",
               maxWidth: "19.6rem",
+              margin: 0,
+              padding: 0,
             }}
           />
           <Skeleton
@@ -77,6 +67,8 @@ const ItemDetail = ({ product }) => {
               height: "20rem",
               width: "100%",
               maxWidth: "19.6rem",
+              margin: 0,
+              padding: 0,
             }}
           />
           <Skeleton
@@ -86,6 +78,8 @@ const ItemDetail = ({ product }) => {
               height: "20rem",
               width: "100%",
               maxWidth: "19.6rem",
+              margin: 0,
+              padding: 0,
             }}
           />
 
@@ -95,7 +89,9 @@ const ItemDetail = ({ product }) => {
               gridArea: "e",
               height: "15rem",
               width: "100%",
-              maxWidth: "85rem",
+              maxWidth: "81.5rem",
+              margin: 0,
+              padding: 0,
             }}
           />
         </div>
